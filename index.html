@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Al-Hizbul-A'zam (Abridged) – Support</title>
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="description" content="Support and contact page for the Al-Hizbul-A'zam (Abridged) app for Android and iOS.">
 <style>
   :root { --bg: #f7f1e1; --page: #fffaf0; --text: #22190f; --muted: #6f5d3f; --gold: #a6823f; --red: #a8201a; --rule: #dcc79a; }
@@ -18,7 +20,8 @@
   dt { font-weight: bold; margin-top: 1rem; } dd { margin: .25rem 0 0; }
   a { color: var(--red); }
   .stores { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
-  .stores a { display: inline-block; padding: .5rem .9rem; border: 1px solid var(--gold); border-radius: 8px; text-decoration: none; color: var(--text); }
+  .stores a, .stores .soon { display: inline-block; padding: .5rem .9rem; border: 1px solid var(--gold); border-radius: 8px; text-decoration: none; color: var(--text); }
+  .stores .soon { color: var(--muted); border-style: dashed; }
   footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
 </style>
 </head>
@@ -34,7 +37,10 @@
 
   <div class="stores">
     <a href="https://play.google.com/store/apps/details?id=com.hizbulazam.abridged">Get it on Google Play</a>
-    <a href="#">Download on the App Store</a>
+    <!-- TODO: once the iOS app is live, restore this as a link. The App Store Connect app ID is 6819869434
+         (hizbulazam-app eas.json ascAppId); the app's Share button already uses https://apps.apple.com/app/id6819869434. -->
+    <!-- Example: <a href="https://apps.apple.com/app/id6819869434">Download on the App Store</a> -->
+    <span class="soon">App Store: coming soon</span>
   </div>
 
   <h2>Contact</h2>
